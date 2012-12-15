@@ -1,0 +1,188 @@
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+@media (min-width: 1200px) {
+  .span12, .container {
+    width: 1170px;
+  }
+}
+
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 0px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: 15px;
+  font-weight: normal;
+  color: #999;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+.courgette{
+  font-family: 'Courgette', cursive;
+  font-weight: normal;
+}
+
+.floatLeft{
+	float: left;
+}
+
+
+/* Header */
+header{
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+	border-bottom: 1px solid #c8c8c8;
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+	overflow: auto;
+	padding-top: 10px;
+	position: relative;
+	z-index: 9999;
+}
+
+
+header nav ul li{
+	list-style: none;
+	float: left;
+}
+
+header nav ul li a{
+	font-weight: bold;
+	margin-top: 3px;
+}
+
+
+#logo {
+  float: left;
+}
+
+body > div.container{
+	min-height: 590px;
+}
+
+/* Footer */
+footer{
+	background: #e5e5e5; /* Old browsers */
+	background: -moz-linear-gradient(top, #e5e5e5 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e5e5), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #e5e5e5 0%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #e5e5e5 0%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	border-top: 1px solid #c8c8c8;
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+	overflow: auto;
+	padding: 10px 0;
+}
+
+footer span{
+  float: left;
+  padding: 5px 0;
+}
+
+footer nav{
+  float: right;
+}
+
+footer ul{
+  list-style: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li{
+  float: left;
+}
+
+footer ul li a{
+  text-indent: -9999px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 3px 8px;
+  background: url('social.png')
+}
+
+
+footer .twitter{
+  background-position: 0 40px;
+}
+
+
+
+/* Profile Page */
+.gallerySpan4{
+	width: 33.33333%;
+	float: left;
+	margin-top: 1px;
+}
+
+.gallerySpan4 img{
+	border: 2px solid #d7d7d7;
+}
+
+.gallerySpan4 .carousel{
+	margin-bottom: 0;
+}
+
+#leftBottomLeftCarousel img, #rightTopRightCarousel img{
+	width: 190px;
+	height: 146px;
+}
+
+#rightBottomCarousel{
+	clear: both;
+}
