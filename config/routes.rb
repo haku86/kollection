@@ -1,11 +1,9 @@
 Kollection::Application.routes.draw do
-  get "pages/gunpla"
+  root to: 'pages#gunpla'
+  
+  match '/gunpla', to: 'pages#gunpla'
 
-  get "pages/gunplaKollection"
-
-  get "pages/profile"
-
-  get "pages/kollection"
+  match '/gunplaKollection', to: 'pages#gunplaKollection'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
