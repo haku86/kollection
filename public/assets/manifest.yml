@@ -1,9 +1,13 @@
 ---
-123.png: 123-1c347131ae1572cb75d39b3d11cc0210.png
-1shot.png: 1shot-ffc1087a23e3c7f7688811b7b61f3f51.png
+corner.png: corner-ba4f83ee3fc40cc2534d83fcdeea2cd3.png
+drib.jpg: drib-6997f0b1554806a47806238f001099be.jpg
 leftbottomleft1.jpg: leftbottomleft1-beb583457237e383fe6b2501d596ceaa.jpg
 leftbottomleft2.jpg: leftbottomleft2-918616576dd2a43747dcc79012472729.jpg
 leftbottomleft3.jpg: leftbottomleft3-9d49ef5a90245dc6d8c25f00adf3c3ce.jpg
+leftbottomright1.jpg: leftbottomright1-0cdc09cc754bc77555adfeb8a22c76cf.jpg
+leftbottomright2.jpg: leftbottomright2-6ca1cd23a2a6c07a18d2b3e0ca386a7a.jpg
+leftbottomright3.jpg: leftbottomright3-af1fc414c86003f5bab11697d1d8bcce.jpg
+leftbottomright4.jpg: leftbottomright4-397fc3e55674a9bf99b8348f35ffbc88.jpg
 lefttop1.jpg: lefttop1-ceff61ecc28db97a1e988906f2ab6c21.jpg
 lefttop2.jpg: lefttop2-5434756833f227beff1f5b6cbd509f15.jpg
 lefttop3.jpg: lefttop3-c2043104363aa69e82261db91c474ef5.jpg
@@ -12,9 +16,10 @@ logo.png: logo-b02cdab48b8069a291d9cc2335e739b9.png
 middle1.jpg: middle1-2c151ffd8211131a3b79aecb29d2f830.jpg
 middle2.jpg: middle2-dcf6d8952311a2d3add3b9249528749f.jpg
 middle3.jpg: middle3-2b5fdd9aa1b48d48f1dbfd0378666ac3.jpg
+profile.png: profile-bc206372c0f254e7280307499b4edaff.png
 rails.png: rails-be8732dac73d845ac5b142c8fb5f9fb0.png
 social.png: social-f590e76635a15e992cf7a7a3533dcb4b.png
 application.js: application-8c4cf18cba1a0134ed6a8c5a14746c25.js
-application.css: application-1cc4c7aa119b7e7958f513a0870ffa81.css
+application.css: application-fee3eb96e0dfac8a2654771a973a9a83.css
 glyphicons-halflings-white.png: glyphicons-halflings-white-13553a5bf21ae3cc374006592488ec64.png
 glyphicons-halflings.png: glyphicons-halflings-ab3144065a860d198f1d7d9a4882640c.png

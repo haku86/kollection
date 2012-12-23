@@ -1,6 +1,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
+@import "bootstrap-responsive";
 
 @media (min-width: 1200px) {
   .span12, .container {
@@ -35,6 +36,9 @@ textarea {
   margin-bottom: 10px;
 }
 
+.floatLeft{
+	float: left;
+}
 
 
 /* typography */
@@ -43,34 +47,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
-h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
+.elsie{
+	font-family: 'Elsie Swash Caps', cursive;
 }
 
-h2 {
-  font-size: 1.7em;
-  letter-spacing: -1px;
-  margin-bottom: 15px;
-  font-weight: normal;
-  color: #999;
-}
-
-p {
-  font-size: 1.1em;
-  line-height: 1.7em;
-}
-
-.courgette{
-  font-family: 'Courgette', cursive;
-  font-weight: normal;
-}
-
-.floatLeft{
-	float: left;
-}
 
 
 /* Header */
@@ -152,7 +132,7 @@ footer ul li a{
   display: block;
   width: 40px;
   height: 40px;
-  margin: 3px 8px;
+  margin: 0 8px;
   background: url('social.png')
 }
 
@@ -167,7 +147,7 @@ footer .twitter{
 .gallerySpan4{
 	width: 33.33333%;
 	float: left;
-	margin-top: 1px;
+	margin-top: 10px;
 }
 
 .gallerySpan4 img{
@@ -185,4 +165,178 @@ footer .twitter{
 
 #rightBottomCarousel{
 	clear: both;
+}
+
+#profilePic{
+	border: 6px solid #ffffff;
+	box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.25);
+	border-radius: 4px;
+	position: relative;
+	top: -70px;
+	left: 40px;
+	width: 125px;
+}
+
+#profilePic a{
+	width: 95px;
+	margin-top: 5px;
+	clear: left;
+}
+
+#profileDescription span{
+	font-size: 0.875em;
+	color: #999999;
+}
+
+#profileStats ul{
+	margin-top: 47px;
+	float: left;
+}
+
+#profileStats ul li{
+	list-style: none;
+	margin: 0;
+	float: left;
+	border-right: 1px solid #E0E0E0;
+}
+
+#profileStats ul li:last-child{
+	border-right: none;
+}
+
+#profileStats a{
+	display: block;
+	text-decoration: none;
+	color: #999999;
+	padding: 0 15px;
+}
+
+#profileStats span{
+	display: block;
+}
+
+#profileStats span.count{
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #06b0ee;
+}
+
+#profileStats a:hover span.meta{
+	color: #666666;
+}
+
+.kollectionList{
+	background: url('parchmentBG.png');
+	overflow: auto;
+	position: relative;
+	z-index: -1000;
+	border-top: 1px solid #E0E0E0; 	border-bottom: 1px solid #E0E0E0;
+}
+
+div[class*='stack'] {
+    float: left;
+    position: relative;
+    margin: 25px 50px;
+}
+ 
+div[class*='stack'], div[class*='stack']:before, div[class*='stack']:after {
+    border: 6px solid #fff;
+    height: 100px; width: 100px;
+    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+ 
+div[class*='stack']:before, div[class*='stack']:after {
+    background: #768590;
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
+ 
+div[class*='stack']:before {
+    background: #eff4de;
+}
+
+/*STACK ONE*/
+.stackone:before {
+    top: 4px;
+    left: -6px;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+}
+ 
+.stackone:after {
+    top: -2px;
+    left: -6px;
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    transform: rotate(4deg);
+}
+ 
+/*STACK TWO*/
+.stacktwo:before {
+    top: 0px;
+    left: -10px;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+}
+ 
+.stacktwo:after {
+    top: 5px; left: 0px;
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    transform: rotate(4deg);
+}
+ 
+/*STACK THREE*/
+.stackthree:before {
+    top: 5px;
+    left: -15px;
+    z-index: -1;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+ 
+.stackthree:after {
+    top: -2px;
+    left: -10px;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+/*STACK FOUR*/
+.stackfour:before {
+    top: 0px;
+    left: -10px;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+}
+ 
+.stackfour:after {
+    top: 5px; left: 0px;
+    -webkit-transform: rotate(7deg);
+    -moz-transform: rotate(7deg);
+    -o-transform: rotate(7deg);
+    -ms-transform: rotate(7deg);
+    transform: rotate(7deg);
 }
