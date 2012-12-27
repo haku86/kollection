@@ -463,15 +463,15 @@
  * ============================================================ */
 
 
-!function ($) {
+/*!function ($) {
 
-  "use strict"; // jshint ;_;
+  "use strict"; // jshint ;_;*/
 
 
  /* COLLAPSE PUBLIC CLASS DEFINITION
   * ================================ */
 
-  var Collapse = function (element, options) {
+/*  var Collapse = function (element, options) {
     this.$element = $(element)
     this.options = $.extend({}, $.fn.collapse.defaults, options)
 
@@ -562,13 +562,13 @@
       this[this.$element.hasClass('in') ? 'hide' : 'show']()
     }
 
-  }
+  }*/
 
 
  /* COLLAPSE PLUGIN DEFINITION
   * ========================== */
 
-  var old = $.fn.collapse
+/*  var old = $.fn.collapse
 
   $.fn.collapse = function (option) {
     return this.each(function () {
@@ -585,21 +585,21 @@
   }
 
   $.fn.collapse.Constructor = Collapse
-
+*/
 
  /* COLLAPSE NO CONFLICT
   * ==================== */
 
-  $.fn.collapse.noConflict = function () {
+/*  $.fn.collapse.noConflict = function () {
     $.fn.collapse = old
     return this
-  }
+  }*/
 
 
  /* COLLAPSE DATA-API
   * ================= */
 
-  $(document).on('click.collapse.data-api', '[data-toggle=collapse]', function (e) {
+/*  $(document).on('click.collapse.data-api', '[data-toggle=collapse]', function (e) {
     var $this = $(this), href
       , target = $this.attr('data-target')
         || e.preventDefault()
@@ -609,7 +609,7 @@
     $(target).collapse(option)
   })
 
-}(window.jQuery);/* ============================================================
+}(window.jQuery);*//* ============================================================
  * bootstrap-dropdown.js v2.2.2
  * http://twitter.github.com/bootstrap/javascript.html#dropdowns
  * ============================================================

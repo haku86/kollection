@@ -40,6 +40,10 @@ textarea {
 	float: left;
 }
 
+.clearfix{
+	clear: both;
+}
+
 
 /* typography */
 
@@ -183,19 +187,23 @@ footer .twitter{
 	clear: left;
 }
 
+#profileDescription h3{
+	color: #06B0EE;
+}
+
 #profileDescription span{
 	font-size: 0.875em;
 	color: #999999;
 }
 
 #profileStats ul{
-	margin-top: 47px;
+	margin: 0;
 	float: left;
 }
 
 #profileStats ul li{
 	list-style: none;
-	margin: 0;
+	margin: 47px 0 0 0;
 	float: left;
 	border-right: 1px solid #E0E0E0;
 }
@@ -204,11 +212,15 @@ footer .twitter{
 	border-right: none;
 }
 
-#profileStats a{
+#profileStats ul li a{
 	display: block;
 	text-decoration: none;
 	color: #999999;
-	padding: 0 15px;
+	padding: 0 15px; 
+}
+
+#profileStats ul li:first-child a{
+	padding-left: 0px;
 }
 
 #profileStats span{
@@ -225,7 +237,63 @@ footer .twitter{
 	color: #666666;
 }
 
-.kollectionList{
+
+
+/* Kollection Tile */
+.kollectionWrapper{
+	margin-top: -30px;
+}
+
+.kollectionTitle{
+	margin-bottom: 20px;
+}
+
+#accordion2{
+	float: left;
+}
+
+#accordion2 .accordion-group{
+	border: none;
+}
+
+.kollectionHeading{
+	float: left;
+}
+
+.kollectionHeading a{
+	float: left;
+	margin-right: 80px;
+}
+
+.kollectionHeading a:hover{
+	text-decoration: none;
+}
+
+.kollectionTile{
+	border-radius: 10px;
+    box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.3);
+}
+
+.kollectionHeading a span{
+	display: block;
+	width: 129px;
+	text-align: center;
+	margin-top: 5px;
+	font-size: 1.125em;
+	color: #06B0EE;
+}
+
+/* Kollection photo pile */
+.kollectionRow{
+	position: relative;
+}
+
+.itemRow{
+	display: inline-block;
+	margin-top: 15px;
+}
+
+.itemList{
 	background: url('parchmentBG.png');
 	overflow: auto;
 	position: relative;
@@ -236,7 +304,7 @@ footer .twitter{
 div[class*='stack'] {
     float: left;
     position: relative;
-    margin: 25px 50px;
+    margin: 25px 40px;
 }
  
 div[class*='stack'], div[class*='stack']:before, div[class*='stack']:after {
