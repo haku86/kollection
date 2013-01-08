@@ -30,7 +30,7 @@
 			</nav>
 		</div>
 	</header>
-	<div class="container">
+	<div>
 		<%= yield %>
 	</div>
 	<footer>
@@ -57,18 +57,23 @@
 
 
 <script>
-	$('#middleCarousel').carousel({
-		interval: 9200
-	});
-	$('#leftTopCarousel').carousel({
+	$('#leftTopleftCarousel').carousel({
 		interval: 6800
 	});
-	$('#leftBottomLeftCarousel').carousel({
+	$('#leftTopRightCarousel').carousel({
 		interval: 5600
 	});
-	$('#leftBottomRightCarousel').carousel({
+	$('#leftMiddleCarousel').carousel({
 		interval: 7400
 	});
+	
+	$('#middleTopCarousel').carousel({
+		interval: 9200
+	});
+	$('#middleBottomCarousel').carousel({
+		interval: 7200
+	});
+	
 	$('#rightBottomCarousel').carousel({
 		interval: 8000
 	});

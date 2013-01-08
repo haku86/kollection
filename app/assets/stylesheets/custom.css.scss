@@ -49,6 +49,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  margin: 0;
 }
 
 .elsie{
@@ -70,29 +71,32 @@ header{
 	border-bottom: 1px solid #c8c8c8;
 	box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
 	overflow: auto;
-	padding-top: 10px;
+	padding: 3px 0;
 	position: relative;
 	z-index: 9999;
 }
 
+header nav ul{
+	margin: 0;
+}
 
 header nav ul li{
 	list-style: none;
 	float: left;
 }
 
-header nav ul li a{
+header nav ul li a.btn{
 	font-weight: bold;
-	margin-top: 3px;
+	margin-top: 4px;
+	padding: 3px 20px;
 }
-
 
 #logo {
   float: left;
 }
 
 body > div.container{
-	min-height: 590px;
+	min-height: 600px;
 }
 
 /* Footer */
@@ -147,95 +151,85 @@ footer .twitter{
 
 
 
-/* Profile Page */
+/* Profile Modal */
+#profileModal .wrapper{
+	background: rgba(255,255,255,0.7);
+	border: 1px solid #c7c7c7;
+	border-radius: 9px;
+	width: 50%;
+	position: absolute;
+	top: 28%; left: 23%;
+	padding: 20px;
+	box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.2);
+	z-index: 10;
+}
+
+#profileModal .middleColumn{
+	width: 55%;
+	margin: 0 25px;
+}
+
+#profileModal .rightColumn{
+	width: auto;
+}
+
+#profileModal .middleColumn h3{
+	margin-bottom: 10px;
+}
+
+#profileModal .middleColumn p{
+	margin-bottom: 30px;
+}
+
+#profileModal .middleColumn .label{
+	margin-right: 10px;
+	padding: 2px 6px;
+}
+
+#profileModal .rightColumn > div{
+	margin-bottom: 5px;
+}
+
+.statsFigures{
+	color: #06B0EE;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+#profileModal .rightColumn a{
+	margin-top: 40px;
+}
+
+/* Profile Gallery */
 .gallerySpan4{
 	width: 33.33333%;
 	float: left;
-	margin-top: 10px;
-}
-
-.gallerySpan4 img{
-	border: 2px solid #d7d7d7;
 }
 
 .gallerySpan4 .carousel{
 	margin-bottom: 0;
 }
 
-#leftBottomLeftCarousel img, #rightTopRightCarousel img{
-	width: 190px;
-	height: 146px;
-}
-
-#rightBottomCarousel{
-	clear: both;
-}
-
-#profilePic{
-	border: 6px solid #ffffff;
-	box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.25);
-	border-radius: 4px;
-	position: relative;
-	top: -70px;
-	left: 40px;
-	width: 125px;
-}
-
-#profilePic a{
-	width: 95px;
-	margin-top: 5px;
-	clear: left;
-}
-
-#profileDescription h3{
-	color: #06B0EE;
-}
-
-#profileDescription span{
-	font-size: 0.875em;
-	color: #999999;
-}
-
-#profileStats ul{
-	margin: 0;
+#leftTopLeftCarousel, #leftTopRightCarousel, #leftBottomLeftCarousel, #leftBottomRightCarousel{
+	width: 50%;
+	height: 150px;
 	float: left;
 }
 
-#profileStats ul li{
-	list-style: none;
-	margin: 47px 0 0 0;
-	float: left;
-	border-right: 1px solid #E0E0E0;
+#middleTopCarousel, #middleBottomCarousel, #leftMiddleCarousel, #rightCenterCarousel{
+	height: 300px;
 }
 
-#profileStats ul li:last-child{
-	border-right: none;
+.carousel-inner{
+	width: 100%;
+	height: 100%;
 }
 
-#profileStats ul li a{
-	display: block;
-	text-decoration: none;
-	color: #999999;
-	padding: 0 15px; 
-}
 
-#profileStats ul li:first-child a{
-	padding-left: 0px;
-}
+/* Stop Here */
 
-#profileStats span{
-	display: block;
-}
 
-#profileStats span.count{
-	font-size: 1.5em;
-	font-weight: bold;
-	color: #06b0ee;
-}
-
-#profileStats a:hover span.meta{
-	color: #666666;
-}
 
 
 
@@ -407,4 +401,25 @@ div[class*='stack']:before {
     -o-transform: rotate(7deg);
     -ms-transform: rotate(7deg);
     transform: rotate(7deg);
+}
+
+
+/* Item Page */
+.itemPageProfile{
+	margin-top: 30px;
+}
+
+.itemPageProfile img{
+	border-radius: 6px;
+	width: 45px; height: 45px;
+	margin-right: 10px;
+}
+
+.itemPageProfile h3{
+	margin: 0;
+	display: inline;
+}
+
+.itemPageProfile span{
+	display: block;
 }
