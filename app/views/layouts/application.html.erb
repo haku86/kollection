@@ -57,33 +57,53 @@
 
 
 <script>
-	$('#leftTopleftCarousel').carousel({
+	$('#leftTopCarousel').carousel({
 		interval: 6800
 	});
-	$('#leftTopRightCarousel').carousel({
+	$('#leftMiddleLeftCarousel').carousel({
 		interval: 5600
 	});
-	$('#leftMiddleCarousel').carousel({
+	$('#leftMiddleRightCarousel').carousel({
 		interval: 7400
 	});
 	
-	$('#middleTopCarousel').carousel({
+	$('#leftBottomCarousel').carousel({
 		interval: 9200
 	});
-	$('#middleBottomCarousel').carousel({
+	$('#rightTopLeftCarousel').carousel({
 		interval: 7200
 	});
 	
-	$('#rightBottomCarousel').carousel({
+	$('#rightTopRightCarousel').carousel({
 		interval: 8000
 	});
-	$('#rightTopLeftCarousel').carousel({
+	$('#rightMiddleCarousel').carousel({
 		interval: 5800
 	});
-	$('#rightTopRightCarousel').carousel({
+	$('#rightBottomLeftCarousel').carousel({
+		interval: 8500
+	});
+	$('#rightBottomRightCarousel').carousel({
 		interval: 6500
 	});
 
+// Sliding Door Effect
+	$(document).ready(function() {
+
+	    //Custom settings
+	    var style_in = 'easeOutBounce';
+	    var style_out = 'jswing';
+	    var speed_in = 1000;
+	    var speed_out = 300;   
+
+	
+		$("#openGallery").click(function () {
+		//animate the position
+				$('div.slideLeft').stop(false, true).animate({"left":"-585"}, {duration:speed_out, easing:style_out});
+		        $('div.slideRight').stop(false, true).animate({"right":"-585"}, {duration:speed_out, easing:style_out});   
+	    });
+
+	});
 </script>
 
 </body>
