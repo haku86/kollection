@@ -204,6 +204,9 @@ footer .twitter{
 /* Profile Gallery */
 #gallery{
 	height: 600px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
 }
 
 div[class*='slide']{

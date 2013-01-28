@@ -94,11 +94,12 @@
 	    var style_in = 'easeOutBounce';
 	    var style_out = 'jswing';
 	    var speed_in = 1000;
-	    var speed_out = 300;   
+	    var speed_out = 1000;   
 
 	
 		$("#openGallery").click(function () {
-		//animate the position
+				$("#profileModal").fadeOut("slow");
+				//animate the position
 				$('div.slideLeft').stop(false, true).animate({"left":"-585"}, {duration:speed_out, easing:style_out});
 		        $('div.slideRight').stop(false, true).animate({"right":"-585"}, {duration:speed_out, easing:style_out});   
 	    });
