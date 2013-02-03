@@ -151,42 +151,57 @@ footer .twitter{
 
 
 
-/* Profile Modal */
-#profileModal .wrapper{
-	background: rgba(255,255,255,0.7);
-	border: 1px solid #c7c7c7;
-	border-radius: 9px;
-	width: 50%;
-	position: absolute;
-	top: 28%; left: 23%;
-	padding: 20px;
-	box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.2);
+/* Profile Carousel */
+#profileCarousel .wrapper{
+	background: #ffffff;
+	width: 94%;
+	height: 160px;
+	padding: 20px 3%;
+	position: relative;
 	z-index: 10;
+	-moz-box-shadow:    inset 0 0 10px rgba(0,0,0,0.35);
+   -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.35);
+   box-shadow:         inset 0 0 10px rgba(0,0,0,0.35);
 }
 
-#profileModal .middleColumn{
-	width: 55%;
-	margin: 0 25px;
+#profileCarousel .leftColumn{
+	width: 14%;
+	background: #f2f2f2;
+	padding: 1%;
+	border-radius: 7px;
 }
 
-#profileModal .rightColumn{
-	width: auto;
+#profileCarousel .middleColumn{
+	width: 53%;
+	margin: 0 3%;
 }
 
-#profileModal .middleColumn h3{
+#profileCarousel .rightColumn{
+	width: 25%;
+}
+
+#profileCarousel .leftColumn a{
+	width: 100%;
+	padding: 5px 0;
+	position: relative;
+	left: -1px;
+	margin-top: 8px;
+}
+
+#profileCarousel .middleColumn h3{
 	margin-bottom: 10px;
 }
 
-#profileModal .middleColumn p{
-	margin-bottom: 30px;
+#profileCarousel .middleColumn p{
+	margin-bottom: 45px;
 }
 
-#profileModal .middleColumn .label{
+#profileCarousel .middleColumn .label{
 	margin-right: 10px;
 	padding: 2px 6px;
 }
 
-#profileModal .rightColumn > div{
+#profileCarousel .rightColumn > div{
 	margin-bottom: 5px;
 }
 
@@ -197,8 +212,8 @@ footer .twitter{
 	margin-right: 10px;
 }
 
-#profileModal .rightColumn a{
-	margin-top: 40px;
+#profileCarousel .rightColumn a{
+	margin-top: 38px;
 }
 
 /* Profile Gallery */
@@ -224,24 +239,97 @@ div[class*='slide']{
 	right: 0;
 }
 
+.carouselDiv{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
 div[class*='slide'] .carousel{
 	margin-bottom: 0;
 }
+	
+div[id*='Portrait']{
+	width: 50%;
+	height: 400px;
+	position: absolute;
+}
 
-div[id*='Carousel']{
+#leftSlidePortraitCarousel{
+	left: 0;
+	top: 0;
+}
+
+#rightSlidePortraitCarousel{
+	right: 0;
+	bottom: 0;
+}
+
+div[id*='Landscape']{
+	width: 50%;
+	height: 200px;
+	position: absolute;
+}
+
+#leftSlideLandscapeCarousel1{
+	right: 0;
+	top: 0;
+}
+
+#leftSlideLandscapeCarousel2{
+	right: 0;
+	bottom: 0;
+}
+
+#leftSlideLandscapeCarousel3{
+	left: 0;
+	bottom: 0;
+}
+
+#rightSlideLandscapeCarousel1{
+	left: 0;
+	top: 0;
+}
+
+#rightSlideLandscapeCarousel2{
+	right: 0;
+	top: 0;
+}
+
+#rightSlideLandscapeCarousel3{
+	left: 0;
+	bottom: 0;
+}
+
+#leftSlideLandscapeCarousel0{
+	right: 0;
+	top: 200px;
+}
+
+#rightSlideLandscapeCarousel0{
+	left: 0;
+	top: 200px;
+}
+
+
+div#profileCarousel{
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	left: -50%;
+	top: 200px;
+}
+
+.carousel, .carousel-inner, .carousel-inner img{
 	height: 200px;
 	width: 100%;
 }
 
-.carouselSmall{
-	width: 50% !important;
-	float: left;
+div[id*= 'Portrait'], div[id*= 'Portrait'] .carousel-inner, div[id*= 'Portrait'] .carousel-inner img{
+	height: 400px;
 }
 
-.carousel-inner, .carousel-inner img{
-	width: 100%;
-	height: 100%;
-}
 
 
 

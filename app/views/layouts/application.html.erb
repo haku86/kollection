@@ -57,35 +57,37 @@
 
 
 <script>
-	$('#leftTopCarousel').carousel({
-		interval: 6800
+	$('#leftSlidePortraitCarousel').carousel({
+		interval: 9800
 	});
-	$('#leftMiddleLeftCarousel').carousel({
-		interval: 5600
+	$('#rightSlidePortraitCarousel').carousel({
+		interval: 14600
 	});
-	$('#leftMiddleRightCarousel').carousel({
-		interval: 7400
-	});
-	
-	$('#leftBottomCarousel').carousel({
-		interval: 9200
-	});
-	$('#rightTopLeftCarousel').carousel({
+
+	$('#leftSlideLandscapeCarousel1').carousel({
 		interval: 7200
 	});
 	
-	$('#rightTopRightCarousel').carousel({
-		interval: 8000
+	$('#leftSlideLandscapeCarousel2').carousel({
+		interval: 10600
 	});
-	$('#rightMiddleCarousel').carousel({
-		interval: 5800
+	
+	$('#leftSlideLandscapeCarousel3').carousel({
+		interval: 15400
 	});
-	$('#rightBottomLeftCarousel').carousel({
-		interval: 8500
+
+	$('#rightSlideLandscapeCarousel1').carousel({
+		interval: 12500
 	});
-	$('#rightBottomRightCarousel').carousel({
-		interval: 6500
+
+	$('#rightSlideLandscapeCarousel2').carousel({
+		interval: 8600
 	});
+
+	$('#rightSlideLandscapeCarousel3').carousel({
+		interval: 13600
+	});
+		
 
 // Sliding Door Effect
 	$(document).ready(function() {
@@ -98,7 +100,7 @@
 
 	
 		$("#openGallery").click(function () {
-				$("#profileModal").fadeOut("slow");
+				$("#profileCarousel").fadeOut("slow");
 				//animate the position
 				$('div.slideLeft').stop(false, true).animate({"left":"-585"}, {duration:speed_out, easing:style_out});
 		        $('div.slideRight').stop(false, true).animate({"right":"-585"}, {duration:speed_out, easing:style_out});   
