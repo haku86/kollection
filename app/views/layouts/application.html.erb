@@ -17,7 +17,15 @@
   <link rel="apple-touch-icon" href="twitter-bootstrap-v2/docs/examples/images/apple-touch-icon.png">  
   <link rel="apple-touch-icon" sizes="72x72" href="twitter-bootstrap-v2/docs/examples/images/apple-touch-icon-72x72.png">  
   <link rel="apple-touch-icon" sizes="114x114" href="twitter-bootstrap-v2/docs/examples/images/apple-touch-icon-114x114.png">
-	<link href='http://fonts.googleapis.com/css?family=Elsie+Swash+Caps' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
+	
+	<!-- LaunchRock Facebook Open Graph-->
+	<meta property="og:title" content="Kollection.me" />
+	<meta property="og:type" content="company" />
+	<meta property="og:site_name" content="Kollection.me" />
+	<meta property="og:url" content="http://kollection.herokuapp.com/" />
+	<meta property="og:image" content="" />
+
 </head>
 <body>
 	<header>
@@ -30,9 +38,9 @@
 			</nav>
 		</div>
 	</header>
-	<div>
-		<%= yield %>
-	</div>
+
+	<%= yield %>
+
 	<footer>
 		<div class="container">
 	        <span>
@@ -100,10 +108,10 @@
 
 	
 		$("#openGallery").click(function () {
-				$("#profileCarousel").fadeOut("slow");
 				//animate the position
 				$('div.slideLeft').stop(false, true).animate({"left":"-585"}, {duration:speed_out, easing:style_out});
 		        $('div.slideRight').stop(false, true).animate({"right":"-585"}, {duration:speed_out, easing:style_out});   
+				$("#profileCarousel").fadeOut(1500);
 	    });
 
 	});

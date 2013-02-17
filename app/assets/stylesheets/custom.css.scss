@@ -52,8 +52,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-.elsie{
-	font-family: 'Elsie Swash Caps', cursive;
+.petit{
+	font-family: 'Petit Formal Script', cursive;
 }
 
 
@@ -96,7 +96,9 @@ header nav ul li a.btn{
 }
 
 body > div.container{
-	min-height: 600px;
+	min-height: 540px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 /* Footer */
@@ -216,12 +218,16 @@ footer .twitter{
 	margin-top: 38px;
 }
 
+
+
+
 /* Profile Gallery */
 #gallery{
 	height: 600px;
 	width: 100%;
 	overflow: hidden;
-	position: relative;
+	position: absolute;
+	z-index: 100;
 }
 
 div[class*='slide']{
@@ -322,8 +328,12 @@ div#profileCarousel{
 }
 
 .carousel, .carousel-inner, .carousel-inner img{
-	height: 200px;
+	height: 198px;
 	width: 100%;
+	border: 1px solid #d7d7d7;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
 }
 
 div[id*= 'Portrait'], div[id*= 'Portrait'] .carousel-inner, div[id*= 'Portrait'] .carousel-inner img{
@@ -333,6 +343,33 @@ div[id*= 'Portrait'], div[id*= 'Portrait'] .carousel-inner, div[id*= 'Portrait']
 
 
 
+
+/* Coming Soon */
+
+#comingSoon h2{
+	color: #06B0EE;
+	text-align: center;
+}
+
+#comingSoon .signUpFormWrapper{
+	width: 30%;
+	background: #d7d7d7;
+	padding: 40px 30px;
+	border-radius: 14px;
+	margin: 0 auto;
+}
+
+#comingSoon .signUpFormWrapper form input{
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+}
+
+#comingSoon .signUpFormWrapper form input[type="text"]{
+	height: 30px;
+	font-size: 1.25em;
+	margin-bottom: 30px;
+}
  
 
 /* Stop Here */
